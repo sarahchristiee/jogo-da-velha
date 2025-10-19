@@ -1,0 +1,130 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+
+  /* fundo */
+  background: linear-gradient(-45deg, #FFD6E8, #FF7CA8, #FFC1CC, #EBD9FC);
+  background-size: 400% 400%;
+  animation: gradientBackground 15s ease infinite;
+
+  /* fonte */
+  font-family: 'Fredoka', sans-serif;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* animação no fundo */
+@keyframes gradientBackground {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-weight: 400;
+  color: white;
+}
+
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 16vh);
+  grid-template-rows: repeat(3, 16vh);
+  gap: 1vh;
+  width: max-content;
+  user-select: none;
+  background: transparent;
+  margin-bottom: 3.3vh;
+  border: none;
+}
+
+.square {
+  background-color: #ffffff;
+  font-size: 8vh;
+  font-family: 'Fredoka', sans-serif;
+  cursor: pointer;
+  color: rgb(141, 0, 54);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  border: none;
+  border-radius: 0.5vh;
+  box-shadow: 0 1vh 1vh rgba(255, 124, 168, 0.3);
+  transition: background-color 0.1s ease;
+}
+
+.square:hover {
+  background-color: #ffeaf3;
+}
+
+/* animação quando clicar no quadrado */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    background-color: #ffe3e6;
+  }
+  50% {
+    transform: scale(1.1);
+    background-color: #ffb3c6;
+  }
+  100% {
+    transform: scale(1);
+    background-color: #ffe3e6;
+  }
+}
+
+.pulse {
+  animation: pulse 0.4s ease-in-out forwards;
+}
+
+
+.status {
+  font-size: 4vh;
+  font-weight: 500;
+  margin-bottom: 3.3vh;
+  margin-top: -4vh;
+  color: black;
+  background-color: rgb(255, 255, 255);
+  padding: 1.2vh;
+  border-radius: 2vh;
+}
+
+h1 {
+  font-size: 8vh;
+}
+
+.reset-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 1.6vh;
+  padding: 1.6vh 3.3vh;
+  font-family: 'Fredoka', sans-serif;
+  font-size: 2.5vh;
+  font-weight: 550;
+  color: #fd8787;
+  cursor: pointer;
+  background-color: #ffffff;
+  border: none;
+  border-radius: 2vh;
+  user-select: none;
+  transition: transform 0.2s;
+}
+
+.reset-button:hover {
+  transform: scale(1.15);
+}
