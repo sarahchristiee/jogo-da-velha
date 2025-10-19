@@ -19,23 +19,23 @@ Antes de começar, certifique-se de ter instalado:
 
 1. **Clone o repositório**
 
-´´´
+```
 git clone https://github.com/sarahchristiee/jogo-da-velha.git
 cd jogo-da-velha
-´´´
+```
 
 
 2. **Instale as dependências**
-´´´
+```
 npm install
-´´´
+```
 
 
 4. **Inicie o servidor de desenvolvimento**
 
-´´´
+```
 npm run dev
-´´´
+```
 
 4. **Abra no navegador**
 [http://localhost:5173]
