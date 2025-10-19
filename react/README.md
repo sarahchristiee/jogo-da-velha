@@ -1,8 +1,9 @@
 # 🕹️ Jogo da velha em React
 
-Jogo da velha desenvolvido em react todo bonitinho e moranguinhos 🍓
-Esse jogo tem som! Então ligue o volume 🔊
----
+>Jogo da velha desenvolvido em react todo bonitinho e moranguinhos 🍓
+
+>Esse jogo tem som! Então ligue o volume 🔊
+
 
 ## 🚀 Como rodar o projeto localmente
 
@@ -38,4 +39,4 @@ npm run dev
 ```
 
 4. **Abra no navegador**
-[http://localhost:5173]
+[http://localhost:5173](http://localhost:5173)
